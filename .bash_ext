@@ -13,11 +13,11 @@ LESS=-i
 
 # CF CLI ALIASES:
 # LAB personal
-alias lpers='export CF_HOME="/home/b10s/.cf_config/lab/personal" && echo -e "cf cli switched to \e[1m\e[32mLAB PERSONAL\e[39m\e[0m account"'
+alias lpers='export CF_HOME="~/.cf_config/lab/personal" && echo -e "cf cli switched to \e[1m\e[32mLAB PERSONAL\e[39m\e[0m account"'
 # LAB admin
-alias ladm='export CF_HOME="/home/b10s/.cf_config/lab/admin" && echo -e "cf cli switched to \e[1m\e[32mLAB ADMIN\e[39m\e[0m account"'
+alias ladm='export CF_HOME="~/.cf_config/lab/admin" && echo -e "cf cli switched to \e[1m\e[32mLAB ADMIN\e[39m\e[0m account"'
 # PRO personal
-alias ppers='export CF_HOME="/home/b10s/.cf_config/pro/personal" && echo -e "cf cli switched to \e[1m\e[32mPRO PERSONAL\e[39m\e[0m account"'
+alias ppers='export CF_HOME="~/.cf_config/pro/personal" && echo -e "cf cli switched to \e[1m\e[32mPRO PERSONAL\e[39m\e[0m account"'
 # PRO admin
-alias padm='export CF_HOME="/home/b10s/.cf_config/pro/admin" && echo -e "cf cli switched to \e[1m\e[31mPRO ADMIN\e[39m\e[0m account"'
+alias padm='export CF_HOME="~/.cf_config/pro/admin" && echo -e "cf cli switched to \e[1m\e[31mPRO ADMIN\e[39m\e[0m account"'
 ################
