@@ -1,0 +1,25 @@
+screen -t git
+screen -t vim
+select 1
+stuff "vim^M"
+screen -t bash2
+screen -t bash3
+screen -t bash4
+altscreen on
+term screen-256color
+bind ',' prev
+bind '.' next
+
+#change the hardstatus settings to give an window list at the bottom of the
+#screen, with the time and date and with the current window highlighted
+hardstatus alwayslastline
+#hardstatus string '%{= kG}%-Lw%{= kW}%50> %n%f* %t%{= kG}%+Lw%< %{= kG}%-=%c:%s%{-}'
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
+defscrollback 10000
+defutf8 on
+
+# move between regions/pane
+bind j focus down
+bind k focus up
+bind l focus right
+bind h focus left
