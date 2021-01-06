@@ -1,4 +1,3 @@
-HISTFILE=10000
 HISTFILESIZE=10000
 
 parse_git_branch() {
@@ -21,3 +20,12 @@ alias ppers='export CF_HOME="~/.cf_config/pro/personal" && echo -e "cf cli switc
 # PRO admin
 alias padm='export CF_HOME="~/.cf_config/pro/admin" && echo -e "cf cli switched to \e[1m\e[31mPRO ADMIN\e[39m\e[0m account"'
 ################
+
+sssh() {
+	printf '\ek%s\e\\' "$1"
+	ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null "$1";
+}
+
+cdt() {
+	cd $(mktemp -d)
+}

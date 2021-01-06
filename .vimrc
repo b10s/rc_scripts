@@ -48,9 +48,13 @@ execute pathogen#infect()
 syntax on
 " filetype plugin indent on
 
-set tabstop=2
+" how to show tab, e.g. as 2 spaces
 set shiftwidth=2
-set expandtab
+set tabstop=2
+
+" in case of golang we don't want to expand tab to spaces
+" set expandtab
+set noexpandtab
 
 " tab autocompletion improvement
 set wildmode=longest,list,full
