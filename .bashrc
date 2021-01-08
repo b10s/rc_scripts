@@ -22,10 +22,14 @@ alias padm='export CF_HOME="~/.cf_config/pro/admin" && echo -e "cf cli switched 
 ################
 
 sssh() {
-	printf '\ek%s\e\\' "$1"
+	printf '\ek%s\e\\' "$1";
 	ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null "$1";
 }
 
-cdt() {
-	cd $(mktemp -d)
+function cdt() {
+	cd $(mktemp -d);
+}
+
+scut() {
+	tr -s ' ' | cut -d' ' -f $1;
 }
